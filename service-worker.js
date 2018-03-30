@@ -6,7 +6,7 @@ let filesToCache = [
     'css/styles.css',
     'js/array.observe.polyfill.js',
     'js/object.observe.polyfill.js',
-    'js/scripts.js'
+    'js/scrips.js'
 ];
 
 self.addEventListener('install', function (e) {
