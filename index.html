@@ -13,9 +13,25 @@
 
     <link rel="manifest" href="manifest.json">
 
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyB8o5wivYrl5MYlpTunKfh-eXImFEI3-ZQ",
+        authDomain: "dp-push-com-topicos-3fb46.firebaseapp.com",
+        databaseURL: "https://dp-push-com-topicos-3fb46.firebaseio.com",
+        projectId: "dp-push-com-topicos-3fb46",
+        storageBucket: "dp-push-com-topicos-3fb46.appspot.com",
+        messagingSenderId: "990094686790"
+    };
+    firebase.initializeApp(config);
+    </script>
+
     <script src="js/object.observe.polyfill.js"></script>
     <script src="js/array.observe.polyfill.js"></script>
     <script src="js/scrips.js"></script>
+    <script src="js/push.js"></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -26,7 +42,7 @@
     <meta name="msapplication-TileColor" content="#607d8b">
     
     <meta name="theme-color" content="#607d8b">
-    
+
 </head>
 <body  class="grey lighten-5 blue-grey-text">
     <header id="header" class="container grey lighten-4">
