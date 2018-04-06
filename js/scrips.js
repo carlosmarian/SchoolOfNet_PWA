@@ -78,7 +78,7 @@ document.addEventListener('click', function (e) {
     let notesTag = document.getElementById('notes');
 
     if (e.target.parentElement === notesTag) {
-        if (confirm('remover esta nota?')) {
+        if (confirm('Remover esta nota?')) {
             let listOfNotes = document.querySelectorAll('#notes li');
             listOfNotes.forEach(function (item, index) {
                 if (e.target === item) {
@@ -96,6 +96,6 @@ if ('serviceWorker' in navigator) {
         console.log('Service worker Registered');
     })
     .catch(function (err) {
-        console.log('erro', err);
+        console.error('erro', err);
     });
 }
